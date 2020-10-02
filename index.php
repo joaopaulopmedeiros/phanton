@@ -2,7 +2,9 @@
 
 $database = require_once "core/bootstrap.php";
 
-$URI = trim($_SERVER["REQUEST_URI"], "/");
+require_once "core/Request.php";
+
+$URI = Request::uri();
 
 $router = Router::load("routes.php");
 
