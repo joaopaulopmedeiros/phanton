@@ -19,6 +19,9 @@
                 <li>
                     <a href="https://github.com/joaopaulopmedeiros/phanton/tree/master">Documentation</a>
                 </li>
+                <li>
+                    <a href="https://laracasts.com/series/php-for-beginners" target="_blank">Study</a>
+                </li>
             </ul>
         </nav>
     </div>

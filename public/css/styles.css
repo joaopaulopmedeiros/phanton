@@ -33,7 +33,7 @@ html, body, #app {
 
 #app li {
     list-style-type: none;
-    margin: 0 auto;
+    margin: 0 8px;
 }
 
 #app a {
@@ -49,4 +49,16 @@ html, body, #app {
     flex-direction: column;
     width: 280px;
     text-align: center;
+}
+
+#app form label {
+    margin-bottom: 4px;
+}
+
+#app form input {
+    height: 24px;
+}
+
+#app form button {
+    height: 32px;
 }
