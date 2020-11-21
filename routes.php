@@ -1,6 +1,5 @@
 <?php
 
-$router->define([
-    '' => 'controllers/index.php',
-    'about' => 'controllers/about.php',
-]);
+$router->get('', 'controllers/index.php');
+$router->get('about', 'controllers/about.php');
+$router->post('name', 'controllers/doit.php');
