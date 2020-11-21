@@ -25,12 +25,13 @@
         <input type="text" name="title">
         <button type="submit">Click</button>
     </form>
+    <?php if($posts) :?>
     <ul>
         <?php foreach($posts as $post) : ?>
             <li><?= $post->title?></li>
-        <?php endforeach; ?>    
-        
+        <?php endforeach; ?>        
     </ul>
+    <?php endif ?>
 </body>
 
 </html>
