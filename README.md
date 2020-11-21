@@ -28,7 +28,7 @@ namespace Phanton\Core;
 
 MVC Architecture
 
-ES6+ Features 
+ES6+ Features and SCSS support
 - Webpack
 - Webpack-cli
 
