@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="public/css/styles.css">
 </head>
 
 <body>
@@ -19,6 +20,11 @@
             </li>
         </ul>
     </nav>
+    <form method="POST" action="/posts" class="w-25">
+        <label for="title">Add a post</label>
+        <input type="text" name="title">
+        <button type="submit">Click</button>
+    </form>
 </body>
 
 </html>

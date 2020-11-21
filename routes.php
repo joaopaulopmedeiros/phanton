@@ -2,4 +2,4 @@
 
 $router->get('', 'controllers/index.php');
 $router->get('about', 'controllers/about.php');
-$router->post('name', 'controllers/doit.php');
+$router->post('posts', 'controllers/posts.php');
