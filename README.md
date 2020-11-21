@@ -5,7 +5,7 @@
 Routing:
 ```php
 $router->get('', 'PagesController@home');
-$router->post('posts', 'PagesController@posts');
+$router->post('posts', 'PostsController@store');
 ```
 
 Database connection:
@@ -28,8 +28,20 @@ namespace Phanton\Core;
 
 MVC Architecture
 
+ES6+ Features 
+- Webpack
+- Webpack-cli
 
 ## How to run it?
+
+```php
+composer install
+``` 
+
+```javascript
+npm install
+``` 
+
 ```php
 php -S localhost:2808
 ``` 
