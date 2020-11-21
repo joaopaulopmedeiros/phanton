@@ -7,3 +7,5 @@ App::bind('database',  new QueryBuilder(
     Connection::make($config = App::get('config')['database'])
 
 ));
+
+require_once "helpers/view.php";

@@ -9,12 +9,14 @@ class PagesController
 
         $posts = App::get('database')->selectAll('posts', "Post");
 
-        require_once "views/index.php";
+        return view('index', [
+            'posts' => $posts
+        ]);
     }
 
     public function about()
     {
-        require_once "views/about.php";
+        return view('about');
     }
 
     public function posts()
