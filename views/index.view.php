@@ -9,29 +9,19 @@
 </head>
 
 <body>
-    <h1>Index</h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="/">index</a>
-            </li>
-            <li>
-                <a href="/about">about</a>
-            </li>
-        </ul>
-    </nav>
-    <form method="POST" action="/posts" class="w-25">
-        <label for="title">Add a post</label>
-        <input type="text" name="title">
-        <button type="submit">Click</button>
-    </form>
-    <?php if($posts) :?>
-    <ul>
-        <?php foreach($posts as $post) : ?>
-            <li><?= $post->title?></li>
-        <?php endforeach; ?>        
-    </ul>
-    <?php endif ?>
+    <div id="app">
+        <h1>Phanton Microframework</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/about">Start</a>
+                </li>
+                <li>
+                    <a href="https://github.com/joaopaulopmedeiros/phanton/tree/master">Documentation</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </body>
 
 </html>
