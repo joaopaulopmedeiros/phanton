@@ -2,5 +2,5 @@
 
 class Post
 {
-    public $post_type;
+    public $title;
 }

@@ -25,6 +25,12 @@
         <input type="text" name="title">
         <button type="submit">Click</button>
     </form>
+    <ul>
+        <?php foreach($posts as $post) : ?>
+            <li><?= $post->title?></li>
+        <?php endforeach; ?>    
+        
+    </ul>
 </body>
 
 </html>
