@@ -37,12 +37,14 @@ class Router
 
     public function callAction($controller, $action)
     {
+        $controller = new $controller;
+
         if(!method_exists($controller, $action)) {
             throw new Exception(
                 "{$controller} does not respond to {$action} action"
             );
         }
 
-        return (new $controller)->$action();
+        return $controller->$action();
     }
 }
