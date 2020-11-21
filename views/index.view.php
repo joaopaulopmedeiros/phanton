@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href="/about">Start</a>
+                    <a href="/demo">Start</a>
                 </li>
                 <li>
                     <a href="https://github.com/joaopaulopmedeiros/phanton/tree/master">Documentation</a>

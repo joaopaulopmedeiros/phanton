@@ -7,25 +7,17 @@ class PagesController
 {
     public function home()
     {
+        return view('index');
+    
+    }
 
+    public function demo()
+    {
         $posts = App::get('database')->selectAll('posts', "Post");
-
-        return view('index', [
+        
+        return view('demo', [
             'posts' => $posts
         ]);
     }
 
-    public function about()
-    {
-        return view('about');
-    }
-
-    public function posts()
-    {
-        App::get('database')->insert('posts', [
-            'title' => $_POST['title']
-        ]);
-        
-        redirect("");
-    }
 }
