@@ -1,5 +1,8 @@
 <?php 
 
+namespace Phanton\Controlllers;
+use Phanton\Core\App;
+
 class PagesController 
 {
     public function home()

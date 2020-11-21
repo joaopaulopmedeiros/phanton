@@ -1,5 +1,7 @@
 <?php
 
+namespace Phanton\Core;
+
 class Router
 {
     public $routes = [
@@ -32,15 +34,16 @@ class Router
             );
         }
 
-        throw new Exception("No route defined for this URI.");
+        throw new \Exception("No route defined for this URI.");
     }
 
     public function callAction($controller, $action)
     {
+        $controller = "Phanton\\Controlllers\\{$controller}";
         $controller = new $controller;
 
         if(!method_exists($controller, $action)) {
-            throw new Exception(
+            throw new \Exception(
                 "{$controller} does not respond to {$action} action"
             );
         }

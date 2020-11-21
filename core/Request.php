@@ -1,5 +1,7 @@
 <?php
 
+namespace Phanton\Core;
+
 class Request
 {
     public static function uri()

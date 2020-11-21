@@ -15,6 +15,8 @@ class QueryBuilder
 
         $stmt->execute();
 
+        $model = "Phanton\\Models\\{$model}";
+
         return $stmt->fetchAll(PDO::FETCH_CLASS, $model);
     }
 

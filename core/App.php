@@ -1,5 +1,7 @@
 <?php 
 
+namespace Phanton\Core;
+
 class App 
 {
 
@@ -13,7 +15,7 @@ class App
     public static function get($key)
     {
         if(! array_key_exists($key, static::$registry)) {
-            throw new Exception("There is not a {$key} value");
+            throw new \Exception("There is not a {$key} value");
         }
 
         return static::$registry[$key];
