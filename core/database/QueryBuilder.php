@@ -18,13 +18,13 @@ class QueryBuilder
         return $stmt->fetchAll(PDO::FETCH_CLASS, $model);
     }
 
-    public function insert($table, $parameters) 
+    public function insert($table, $parameters)
     {
 
         $bindParameters = array_map(function ($parameter) {
             return ":${parameter}";
         }, array_keys($parameters));
-        
+
         $bindParameters = implode(', ', $bindParameters);
 
         $columns = implode(', ', array_keys($parameters));
@@ -36,10 +36,13 @@ class QueryBuilder
             $bindParameters
         );
 
-        $stmt = $this->pdo->prepare($sql);
+        try {
 
-        $stmt->execute($parameters);
+            $stmt = $this->pdo->prepare($sql);
 
+            $stmt->execute($parameters);
+        } catch (Exception $e) {
+            die($e->getMessage());
+        }
     }
-
 }
