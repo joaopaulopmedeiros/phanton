@@ -43,3 +43,10 @@ html, body, #app {
 #app li a {
     text-decoration: none;
 }
+
+#app form {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    text-align: center;
+}

@@ -11,6 +11,6 @@ class PostsController
             'title' => $_POST['title']
         ]);
         
-        redirect("");
+        redirect("demo");
     }
 }
