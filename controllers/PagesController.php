@@ -23,6 +23,6 @@ class PagesController
             'title' => $_POST['title']
         ]);
         
-        header('Location: /');
+        redirect("");
     }
 }

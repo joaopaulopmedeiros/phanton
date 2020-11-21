@@ -8,4 +8,4 @@ App::bind('database',  new QueryBuilder(
 
 ));
 
-require_once "helpers/view.php";
+require_once "helpers/functions.php";
