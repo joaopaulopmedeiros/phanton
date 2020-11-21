@@ -27,3 +27,9 @@ namespace Phanton\Core;
 ```
 
 MVC Architecture
+
+
+## How to run it?
+```php
+php -S localhost:2808
+``` 
